@@ -1,0 +1,43 @@
+body{
+	background-color: lightgreen;
+}
+.pai{
+	width: 100%;
+	height: 30vh;
+	display: flex; /*transforma em flex container*/
+	flex-direction: row; /*define a direção dos filhos*/
+	flex-wrap: wrap;/*perimite quebra de linha */
+	justify-content: space-between;/*alinha os filhos em relação ao eixo principal*/
+	align-items: center;
+}
+.filho1{
+	width: 20%;
+	height: 30vh;
+	background-color: green;
+	margin: 1vh;
+}
+.filho2{
+	width: 20%;
+	height: 30vh;
+	background-color: black;
+	margin: 1vh;
+}
+.filho3{
+	width: 20%;
+	height: 30vh;
+	background-color: white;
+	margin: 1vh;
+}
+.filho4{
+	width: 20%;
+	height: 30vh;
+	background-color: red;
+	margin: 1vh;
+}
+@media(max-width: 760px){
+	.filho1, .filho2, .filho3, .filho4{
+		width: 90%;
+		height: 6vh;
+	}
+
+}
